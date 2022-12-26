@@ -49,3 +49,9 @@ CREATE TABLE address_status (
     address_status VARCHAR(30),
     CONSTRAINT pk_addr_status PRIMARY KEY (status_id)
 );
+
+CREATE TABLE country (
+    country_id INT,
+    country_name VARCHAR(200),
+    CONSTRAINT pk_country PRIMARY KEY (country_id)
+);
