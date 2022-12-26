@@ -35,3 +35,11 @@ CREATE TABLE book (
     CONSTRAINT fk_book_lang FOREIGN KEY (language_id) REFERENCES book_language (language_id),
     CONSTRAINT fk_book_pub FOREIGN KEY (publisher_id) REFERENCES publisher (publisher_id)
 );
+
+CREATE TABLE book_author (
+    book_id INT,
+    author_id INT,
+    CONSTRAINT pk_bookauthor PRIMARY KEY (book_id, author_id),
+    CONSTRAINT fk_ba_book FOREIGN KEY (book_id) REFERENC book (book_id),
+    CONSTRAINT fk_ba_author FOREIGN KEY (author_id) REFERENC author (author_id)
+);
