@@ -82,3 +82,10 @@ CREATE TABLE customer_address (
     CONSTRAINT fk_ca_cust FOREIGN KEY (customer_id) REFERENCES customer (customer_id),
     CONSTRAINT fk_ca_addr FOREIGN KEY (address_id) REFERENCES address (address_id)
 );
+
+CREATE TABLE shipping_method (
+    method_id INT,
+    method_name VARCHAR(100),
+    cost DECIMAL(6, 2),
+    CONSTRAINT pk_shipmethod PRIMARY KEY (method_id)
+);
