@@ -1,0 +1,4 @@
+https://www.databasestar.com/complex-sql-query-example/
+https://www.databasestar.com/sample-bookstore-database/
+
+Run Script 10 to Populate Customer Address
